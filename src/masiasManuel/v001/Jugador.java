@@ -29,7 +29,7 @@ public class Jugador {
         do {
             accion = console.readChar("[D]espejar o [M]arcar mina?", true);
         } while (accion != 'D' && accion != 'M');
-        System.out.println();
+        console.writeln();
         return accion;
     }
 
