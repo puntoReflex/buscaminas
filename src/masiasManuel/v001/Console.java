@@ -123,9 +123,9 @@ class Console {
         System.out.flush();
     }
 
-    public char readChar(String title, boolean aMayusculas) {
+    public char readChar(String title, boolean transformToUpperCase) {
         char unChar = this.readChar(title);
-        return aMayusculas ? Character.toUpperCase(unChar) : unChar;
+        return transformToUpperCase ? Character.toUpperCase(unChar) : unChar;
 
     }    
 }

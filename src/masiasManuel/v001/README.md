@@ -4,14 +4,14 @@ Se introduce la clase de utilidad `Console.java`, que abstrae tanto las operacio
 
 ## Vista pública
 
-|Métodos de lectura|Métodos de escritura sin salto de línea|Métodos de escritura con salto de línea|Métodos para mensajes de error
+|Métodos de lectura|Métodos de escritura sin salto de línea|Métodos de escritura con salto de línea|Métodos auxiliares
 |-|-|-|-|
 |`public String readString(String title);`|`public void write(String string);`|`public void writeln();`|`public void writeError(String format);`
-|`public String readString();`|`public void write(int value);`|`public void writeln(String string);`
+|`public String readString();`|`public void write(int value);`|`public void writeln(String string);`|`public void clearScreen();`
 |`public int readInt(String title);`|`public void write(double value);`|`public void writeln(int value);`
 |`public double readDouble(String title);`|`public void write(char character);`|`public void writeln(double value);`
 |`public char readChar(String title);`|`public void write(boolean value);`|`public void writeln(char value);`
-|||`public void writeln(boolean value);`
+|`public char readChar(String title, boolean transformToUpperCase);`||`public void writeln(boolean value);`
 
 La clase `Console` implementa:
 
