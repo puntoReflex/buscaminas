@@ -24,8 +24,8 @@ A diferencia del uso directo de `Scanner` o `System.out`, esta clase ofrece mayo
 
 ## Vista pública
 
-|Métodos de lectura|Métodos de escritura|Métodos de escritura|Métodos para mensajes de error
-|-|-|-|
+|Métodos de lectura|Métodos de escritura sin salto de línea|Métodos de escritura con salto de línea|Métodos para mensajes de error
+|-|-|-|-|
 |`public String readString(String title);`|`public void write(String string);`|`public void writeln();`|`public void writeError(String format);`
 |`public String readString();`|`public void write(int value);`|`public void writeln(String string);`
 |`public int readInt(String title);`|`public void write(double value);`|`public void writeln(int value);`
