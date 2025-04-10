@@ -1,4 +1,4 @@
-package masiasManuel.v002;
+package masiasManuel.v004;
 
 public class VistaTablero {
     private Console console;

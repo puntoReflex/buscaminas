@@ -1,4 +1,4 @@
-package masiasManuel.v002;
+package masiasManuel.v004;
 
 public class Tablero {
     private static final int DIMENSION = 6;
@@ -7,7 +7,6 @@ public class Tablero {
     private static final char CELDA_MARCADA = 'M';
     private static final char CELDA_DESPEJADA = 'D';
     private static final char CELDA_MINA = 'X';
-    private Console console;
 
     private char[][] celdas;
     private boolean[][] minas;
@@ -19,7 +18,6 @@ public class Tablero {
         minas = new boolean[DIMENSION][DIMENSION];
         despejadas = new boolean[DIMENSION][DIMENSION];
         marcadas = new boolean[DIMENSION][DIMENSION];
-        console = new Console();
 
         for (int i = 0; i < DIMENSION; i++) {
             for (int j = 0; j < DIMENSION; j++) {
@@ -44,25 +42,6 @@ public class Tablero {
                 minasColocadas++;
             }
         }
-    }
-
-    public void mostrar() {
-        console.clearScreen();
-        console.writeln("BUSCAMINAS");
-        console.write("  ");
-        for (int i = 1; i <= DIMENSION; i++) {
-            console.write(i + " ");
-        }
-        console.writeln();
-
-        for (int i = 0; i < DIMENSION; i++) {
-            console.write((i + 1) + " ");
-            for (int j = 0; j < DIMENSION; j++) {
-                console.write(celdas[i][j] + " ");
-            }
-            console.writeln();
-        }
-        console.writeln();
     }
 
     public boolean despejar(Coordenada coordenada) {
@@ -137,5 +116,13 @@ public class Tablero {
             }
         }
         return true;
+    }
+
+    public char getCelda(int fila, int columna) {
+        return celdas[fila][columna];
+    }
+    
+    public int getDimension() {
+        return DIMENSION;
     }
 }
