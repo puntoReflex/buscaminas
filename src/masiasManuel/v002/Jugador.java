@@ -1,7 +1,6 @@
 package masiasManuel.v002;
 
 public class Jugador {
-
     private boolean estaVivo;
     private Console console;
 
@@ -34,14 +33,6 @@ public class Jugador {
         } while (accion != 'D' && accion != 'M' && accion != 'B');
         console.writeln();
         return accion;
-    }
-
-    public void celebrarVictoria() {
-        console.writeln("¡Felicidades! Has ganado el juego.");
-    }
-
-    public void lamentarDerrota() {
-        console.writeln("¡BOOM! Has pisado una mina. Fin del juego.");
     }
 
     public boolean estaVivo() {
