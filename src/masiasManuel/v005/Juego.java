@@ -6,6 +6,6 @@ public class Juego {
         FabricaBuscaminas fabrica = new FabricaBuscaminas();
         ControladorBuscaminas controlador = fabrica.crearControlador();
         
-        controlador.iniciarJuego();
+        controlador.jugar();
     }
 }

@@ -15,15 +15,15 @@ public class ControladorBuscaminas {
         this.jugadorVivo = true;
     }
     
-    public void iniciarJuego() {
+    public void jugar() {
         juegoTerminado = false;
         victoria = false;
         jugadorVivo = true;
         
-        ejecutarBucleJuego();
+        ejecutarJuego();
     }
     
-    private void ejecutarBucleJuego() {
+    private void ejecutarJuego() {
         while (!juegoTerminado) {
             vista.mostrar(tablero);
             procesarTurno();
